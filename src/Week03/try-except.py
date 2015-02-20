@@ -4,12 +4,11 @@ grade = raw_input('Enter a grade:')
 
 try:
     f_grade = float(grade)
-
 except:
     f_grade = -1.0
 
 if f_grade > 1.0 or f_grade < 0.0:
-    print 'Grade out of range'
+    print 'Grade out of range or NaN'
 elif f_grade >= 0.9:
     print 'A'
 elif f_grade >= 0.8:
