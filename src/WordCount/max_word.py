@@ -1,13 +1,11 @@
 __author__ = 'tomas'
 
-name = raw_input('Enter file: ')
-handle = open(name, 'r')
-text = handle.read()
+from file_helper import get_file
 
 invalid_words = {'que', 'de', 'el', 'la', 'los', 'y', 'a', 'en', 'no', 'se'}
 
-words = [elem for elem in text.split() if elem not in invalid_words]
-counts = dict()
+words = [elem for elem in get_file() if elem not in invalid_words]
+counts = {}
 
 for word in words:
     counts[word] = counts.get(word, 0) + 1

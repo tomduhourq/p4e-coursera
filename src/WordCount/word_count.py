@@ -1,12 +1,9 @@
 __author__ = 'tomasduhourq'
+from file_helper import get_file
 import operator
 
-name = raw_input('Enter file: ')
-handle = open(name, 'r')
-text = handle.read()
-
 wordcount = {}
-for word in text.split():
+for word in get_file():
     if word not in wordcount:
         wordcount[word] = 1
     else:
