@@ -1,4 +1,4 @@
-from list_helper import create_list
+from src.Week05.list_helper import create_list
 
 min = None
 for elem in create_list('min'):

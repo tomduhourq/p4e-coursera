@@ -1,4 +1,4 @@
-from list_helper import create_list
+from src.Week05.list_helper import create_list
 
 max = None
 for elem in create_list('max'):

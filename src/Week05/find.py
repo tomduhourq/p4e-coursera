@@ -1,4 +1,4 @@
-from list_helper import create_list
+from src.Week05.list_helper import create_list
 
 e = raw_input('Elem to search: ')
 try:
