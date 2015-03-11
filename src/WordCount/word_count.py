@@ -1,9 +1,10 @@
 __author__ = 'tomasduhourq'
-from file_helper import get_file
+
+from src.FilePractice.file_helper import choose_file
 import operator
 
 wordcount = {}
-for word in get_file():
+for word in choose_file().read().split():
     if word not in wordcount:
         wordcount[word] = 1
     else:

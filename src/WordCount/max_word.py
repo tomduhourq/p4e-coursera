@@ -1,10 +1,10 @@
 __author__ = 'tomas'
 
-from file_helper import get_file
+from src.FilePractice.file_helper import choose_file
 
 invalid_words = {'que', 'de', 'el', 'la', 'los', 'y', 'a', 'en', 'no', 'se'}
 
-words = [elem for elem in get_file() if elem not in invalid_words]
+words = [elem for elem in choose_file().read().split() if elem not in invalid_words]
 counts = {}
 
 for word in words:
