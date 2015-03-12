@@ -2,7 +2,7 @@ __author__ = 'tomas'
 
 from src.FilePractice.file_helper import choose_file
 
-invalid_words = {'que', 'de', 'el', 'la', 'los', 'y', 'a', 'en', 'no', 'se'}
+invalid_words = {'que', 'de', 'el', 'la', 'los', 'y', 'a', 'en', 'no', 'se', 'su'}
 
 words = [elem for elem in choose_file().read().split() if elem not in invalid_words]
 counts = {}

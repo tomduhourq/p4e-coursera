@@ -8,10 +8,10 @@ for line in choose_file():
 
 # 7.2 : average of the line starting with a pattern
 count = 0
-total = 0.0
+total = 0
 for line in choose_file():
-    if line.find('X-DSPAM-Confidence:') == -1:
+    if not line.startswith('X-DSPAM-Confidence:'):
         continue
     count += 1
     total += float(line[line.find(':') + 1:].lstrip())
-print 'Average spam confidence ', total/count
+print 'Average spam confidence:', total/count

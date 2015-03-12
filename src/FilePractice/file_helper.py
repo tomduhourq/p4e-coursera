@@ -1,5 +1,8 @@
 __author__ = 'tomasduhourq'
 
+# After getting a handler h, h.read() returns
+# all the characters in the file in a string.
+
 def choose_file():
     try:
         handler = open(raw_input('Enter a file name: '))
@@ -16,7 +19,7 @@ def count():
 
 def search_for(pattern):
     for line in choose_file():
-        if line.find(pattern) == -1:
+        if not line.startswith(pattern):
             continue
         print line.rstrip()
 
