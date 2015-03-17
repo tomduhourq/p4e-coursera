@@ -6,7 +6,6 @@ words = list()
 for line in choose_file():
     for w in line.split():
         if not words.__contains__(w):
-            words += w
-
-print words
+            words.append(w)
+words.sort()
 
