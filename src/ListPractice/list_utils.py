@@ -5,3 +5,6 @@ def chop(l):
     del l[0]
     del l[len(l) - 1]
 
+
+def middle(l):
+    return l[1: len(l) - 1]
