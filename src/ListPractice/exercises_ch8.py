@@ -5,7 +5,7 @@ from src.FilePractice.file_helper import choose_file
 words = list()
 for line in choose_file():
     for w in line.split():
-        if not words.__contains__(w):
+        if not w in words:
             words.append(w)
 
 words.sort()
@@ -23,14 +23,18 @@ print 'There were %d lines in the file with From as the first word' % count
 # Exercise 6
 nums = list()
 while(True):
-    e = raw_input('Enter number or "done":')
+    e = raw_input('Enter a number or "done":')
     if e == 'done' : break
     try:
         n = float(e)
     except:
-        print 'You entered an invalid number'
+        print 'Invalid input'
         exit()
     nums = nums + [n]
 
 print 'Maximum: ', max(nums)
 print 'Minimum: ', min(nums)
+
+len = len(nums)
+if len > 0:
+    print 'Average: ', sum(nums)/len
