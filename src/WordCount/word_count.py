@@ -9,7 +9,6 @@ for word in choose_file().read().split():
         wordcount[word] = 1
     else:
         wordcount[word] += 1
-# Sort the dict by values
+# Sort the dict by values desc
 s = sorted(wordcount.items(), key=operator.itemgetter(1), reverse=True)
-for k, v in s:
-    print k, v
+print s
