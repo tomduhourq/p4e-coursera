@@ -5,7 +5,7 @@ __author__ = 'tomasduhourq'
 
 def choose_file():
     try:
-        handler = open(raw_input('Enter a file name: '))
+        handler = open(raw_input('Enter file name: '))
     except:
         print 'Invalid file'
         exit()
