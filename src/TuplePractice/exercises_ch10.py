@@ -1,6 +1,7 @@
 __author__ = 'tomas'
 import collections, string
 from src.FilePractice.file_helper import choose_file
+
 # Exercise 1
 mails = dict()
 for line in choose_file():
