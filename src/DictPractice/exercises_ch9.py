@@ -8,7 +8,7 @@ def process_line(l):
 
 words = dict()
 for line in open('../WordCount/quijote.txt'):
-    process_line(line.split())
+    process_line(line.rstrip())
 
 # Exercise 2
 def cut_condition_2(l):
