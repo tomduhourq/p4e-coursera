@@ -30,6 +30,9 @@ lst.sort(reverse=True)
 for key, val in lst[:10]:
     print key, val
 
+# Using list comprehension (from having the word count)
+print sorted( [ (v, k) for k, v in counts.items() ], reverse=True )[:10]
+
 # Tuples can also be used as composite keys in a dictionary
 telephones = {('Duhourq', 'Tom'): 45454545, ('Doe', 'John'): 43434343 }
 for last, first in telephones:

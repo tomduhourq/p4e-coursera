@@ -35,6 +35,10 @@ hours = collections.OrderedDict(sorted(hours.items()))
 for hour, count in hours.items():
     print hour, count
 
+# If we weren't able to use the collections module
+for h, m in sorted([(h, m) for h, m in hours.items()]):
+    print h, m
+
 # Exercise 3
 letters = dict()
 
