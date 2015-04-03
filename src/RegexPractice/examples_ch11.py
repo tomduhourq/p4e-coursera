@@ -18,5 +18,5 @@ for line in choose_file():
     if re.search('^From:', line):
         print line.rstrip()
 
-# Extract
+# Extract a list of matches given a regex
 print re.findall('[0-9]+', 'I am 22 years old')
